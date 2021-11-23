@@ -1,0 +1,70 @@
+<html lang="es">
+    <head>
+        
+        <title>Formulario reactivovigilancia HUN</title>
+        <meta charset="utf-8">
+    </head>
+    
+    <body>
+        <img src="Imagenes/HUN blanco y negro.png" alt=""width="250" height="100">
+        <h1>Formato de reactivovigilancia laboratorio</h1>
+        <form>
+            <h4>Digite las iniciales de su nombre</h4>
+            <label for="Nombre responsable">Bacteriologo responsable:</label>
+            <input type="text" name="Nombre responsable" id="Nombre responsable" maxlength="4">
+
+            <h4>Digite su clave max 5 digitos alfanumericos:</h4>
+            <Label for="clave">Contraseña:</Label>
+            <input type="password" name="clave" id="clave" maxlength="5">
+            <br><br><BR></BR>
+
+            <label for="Seccion">Seccion:</label>
+
+            <select name="Seccion" id="seccion">estado del reactivo
+                <option value="seccion">Quimica e inmunologia</option>
+                <option value="seccion">Hematologia</option>
+                <option value="seccion">Coagulacion</option>
+                <option value="seccion">Microbiologia</option>
+                <option value="seccion">Microscopia</option>
+                <option value="seccion">Pruebas rapidas</option>
+                <option value="seccion">Servicio transfusional</option>
+             
+            </select> 
+           
+            <br><br>
+
+            <label for="reactivo">Nombre Reactivo:</label>
+            <input type="text" name="Reactivo" id="Reactivo" maxlength="30">
+
+            <label for="Lote">Lote:</label>
+            <input type="text" name="Lote" id="Lote" maxlength="12">
+
+            <label for="vencimiento">Fecha de vencimiento:</label>
+            <input type="date" name="vencimiento" id="vencimiento">
+
+            <label for="cantidad">cantidad:</label>
+            <input type="number" name="cantidad" id="cantidad" min="1" max="6" step="1">
+            <br><br>
+
+            <label for="apertura">Fecha de apertura:</label>
+            <input type="date" name="inicio" id="inicio">
+            <br><br>
+
+            <label for="terminacion">Fecha de terminacion:</label>
+            <input type="date" name="terminacion" id="terminacion">
+            <br><br>
+
+            <label for="Estado">Estado del reactivo:</label>
+            <input type="radio" name="estado" id="estado"> En uso
+            <input type="radio" name="estado" id="estado"> Terminado
+            <input type="radio" name="estado" id="estado"> Caducado
+            <input type="radio" name="estado" id="estado"> Defectuoso
+            <br><br>
+
+            <label for="Novedad">Describa la novedad o defecto presentado:</label>
+            <input type="text" name="Novedad" id="Novedad">
+            
+        </form>
+        
+    </body>
+</html>
